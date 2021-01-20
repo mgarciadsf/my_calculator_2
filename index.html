@@ -10,6 +10,7 @@
     Number:
     <input type="text" id="n1">
     <p>
+    	<button onclick="square()"> x² </button>
         <button onclick="cube()"> x^3 </button>
     </p>
     <script type="text/javascript">
@@ -17,6 +18,10 @@
         num = document.getElementById ("n1");
         num.value = Math.pow (num.value, 3);
 
+    }
+    function square(){
+    	num = document.getElementById ("n1");
+    	num.value = Math.pow (num.value, 2);
     }
     </script>
 </body>
