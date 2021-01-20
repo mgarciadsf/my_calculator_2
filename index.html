@@ -10,6 +10,7 @@
     Number:
     <input type="text" id="n1">
     <p>
+    	<button onclick="inverse()"> 1/x </button>
     	<button onclick="square()"> x² </button>
         <button onclick="cube()"> x^3 </button>
     </p>
@@ -22,6 +23,10 @@
     function square(){
     	num = document.getElementById ("n1");
     	num.value = Math.pow (num.value, 2);
+    }
+    function inverse(){
+    	num = document.getElementById ("n1");
+    	num.value = 1/num.value;
     }
     </script>
 </body>
